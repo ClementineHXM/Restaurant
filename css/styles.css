@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    padding: 20px;
+    border: 2px solid grey;
+    margin: 50px auto 50px;
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid solid grey;
+    width: 38%;
+    /*height: 200px;*/
+    color: black;
+    margin: 10px;
+    text-align: left;
+    padding: 20px;
+}
+
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.stars {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: dimgrey;
+    margin: 0 15px;
+}
+
+    a:hover {
+        color: black;
+    }
+
+    a:focus {
+        color: grey;
+    }
+
+.active {
+    color: black;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.fit-image {
+    padding-bottom: calc(250/360*100%);
+    position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto 10px;
+    }
+
+    main {
+        width: 90%;
+        padding: 0;
+    }
+}
